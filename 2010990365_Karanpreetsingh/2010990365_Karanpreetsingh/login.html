@@ -1,0 +1,46 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet"  href="login.css">   
+ 
+</head>    
+<body background="1.png " >    
+    <h2>Login Page</h2><br> 
+    
+    <div class="login">    
+    <form id="login" onsubmit="(e)=>submitform(e)">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username" required>    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password" required>    
+        <br><br>    
+        <button type="submit"  id="log">LOG IN</button>  
+        <br><br>    
+        <input type="checkbox" id="check"required>    
+        <span>Remember me </span>    
+        <br><br>    
+        <a href="signup.html">Forgot Password</a>
+    </form>     
+</div>   
+<script>
+    // your function
+var submitform = function(event) {
+    event.preventDefault();
+    window.location="/index.html"
+};
+
+// your form
+var form = document.getElementById("login");
+
+// attach event listener
+form.addEventListener("submit", submitform, true);
+
+</script> 
+</body>    
+</html>

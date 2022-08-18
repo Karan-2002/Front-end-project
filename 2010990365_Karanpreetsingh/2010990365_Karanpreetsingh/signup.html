@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    
+</head>
+
+<body">
+
+    <div>
+        <dive>
+            <h1 style="text-align:center">Sign Up</h1>
+            <h5 style="text-align:center">Welcome to our website</h5>
+            <form >
+             <div>
+                <p style="text-align:center"><label for="userName">User Name</label></p>
+                <input type="text" id="userName" autocomplete="off" >
+             </div>
+             <div>
+                <p style="text-align:center"><label for="email">Email Address</label></p>
+                <input type="email" id="email" name="email" required autocomplete="on">
+             </div>
+             <div>
+                <p style="text-align:center"><label for="password">Password</label></p>
+                <input type="password" id="password" required >
+             </div>
+             <div>
+             <center><button type="button" id="btn" onclick="myFunction()">Sign Up Now</button></center>
+            </div>
+             <p style="text-align:center">Already a member? <a href="login.html">Log in</a></p>
+
+
+             <script>
+                function myFunction() {
+                    document.getElementById("btn").innerHTML = "Thankyou for sign up.";
+                }
+                </script>
+
+            </form>
+            
+            
+            
+        </dive>
+        
+        
+    </div>
+    
+</body>
+</html>
